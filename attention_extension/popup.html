@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Attention Monitor</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 220px; padding: 15px; }
+    h3 { text-align: center; margin-bottom: 15px; }
+    button {
+      width: 100%; padding: 10px; margin-top: 8px;
+      color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;
+    }
+    .btn-start { background: #28a745; }
+    .btn-start:hover { background: #218838; }
+
+    /* New Pause Button Style */
+    .btn-pause { background: #ffc107; color: #333; } 
+    .btn-pause:hover { background: #e0a800; }
+    
+    .btn-stop { background: #dc3545; }
+    .btn-stop:hover { background: #c82333; }
+
+    .btn-dash { background: #007bff; margin-top: 20px;}
+    .btn-report { background: #17a2b8; }
+  </style>
+</head>
+<body>
+  <h3>Attention Monitor</h3>
+
+  <button id="startBtn" class="btn-start">Start Monitoring</button>
+  <button id="pauseBtn" class="btn-pause">Pause Monitoring</button>
+  <button id="stopBtn" class="btn-stop">Stop Monitoring</button>
+
+  <hr style="margin-top:20px; opacity:0.3">
+
+  <button id="openDash" class="btn-dash">Open Dashboard</button>
+  <button id="saveReport" class="btn-report">Save Report</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

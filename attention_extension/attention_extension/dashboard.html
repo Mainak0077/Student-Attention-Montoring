@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognisense X Monitor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="brand">COGNISENSE <span class="tag">X</span></div>
+    <div class="status-bar">
+      <span id="wsStatus">CONNECTING...</span>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    
+    <div class="panel side-panel">
+      <div class="stat-box">
+        <label>FOCUS STATE</label>
+        <div class="value" id="statusValue">--</div>
+      </div>
+      <div class="stat-box">
+        <label>YAWN COUNT</label>
+        <div class="value text-red" id="yawnCount">0</div>
+      </div>
+      <div class="stat-box">
+        <label>MIC STATUS</label>
+        <div class="value" id="micStatus">SILENT</div>
+      </div>
+      
+      <div class="log-container">
+        <label>EVENT LOG</label>
+        <div id="yawnLog" class="logs"></div>
+      </div>
+
+      <button id="downloadBtn" class="btn-report">
+        📥 SAVE REPORT
+      </button>
+    </div>
+
+    <div class="panel charts-panel">
+      
+      <div class="chart-wrapper">
+        <div class="chart-header">
+          <span>ATTENTION STREAM</span>
+          <span class="live-indicator">● LIVE</span>
+        </div>
+        <div class="canvas-box">
+          <canvas id="attentionChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-wrapper">
+        <div class="chart-header">
+          <span>VOICE FREQUENCY</span>
+          <span class="live-indicator">● LIVE</span>
+        </div>
+        <div class="canvas-box">
+          <canvas id="speakingChart"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
