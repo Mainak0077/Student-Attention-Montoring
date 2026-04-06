@@ -1,0 +1,7 @@
+aiohttp
+numpy
+opencv-python
+mediapipe
+pydub
+fpdf2
+Pillow
